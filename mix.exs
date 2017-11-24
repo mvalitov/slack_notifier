@@ -12,7 +12,8 @@ defmodule SlackNotifier.Mixfile do
       description: "A simple wrapper for posting to slack channels",
       docs: [main: "SlackNotifier", # The main page in the docs
           extras: ["README.md"]],
-      deps: deps()
+      deps: deps(),
+      package: package()
     ]
   end
 
