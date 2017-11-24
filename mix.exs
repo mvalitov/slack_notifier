@@ -10,6 +10,8 @@ defmodule SlackNotifier.Mixfile do
       homepage_url: "https://hexdocs.pm/slack_notifier",
       source_url: "https://github.com/mvalitov/slack_notifier",
       description: "A simple wrapper for posting to slack channels",
+      docs: [main: "SlackNotifier", # The main page in the docs
+          extras: ["README.md"]],
       deps: deps()
     ]
   end

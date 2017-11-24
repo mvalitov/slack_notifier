@@ -1,10 +1,11 @@
 defmodule SlackNotifier do
   @moduledoc """
-  Documentation for SlackNotifier.
+  A simple wrapper for posting to slack channels
   """
 
   @doc """
-  ping(body, options \\ [])
+
+  Send message to channel
 
   ## Examples
 
@@ -14,5 +15,6 @@ defmodule SlackNotifier do
       :ok
 
   """
+  @spec ping(String.t, keyword()) :: :atom
   def ping(body, options \\ []), do: SlackNotifier.Worker.ping(body, options)
 end
